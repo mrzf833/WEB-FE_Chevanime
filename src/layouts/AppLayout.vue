@@ -1,13 +1,18 @@
 <template>
     <div>
-        <div class="px-64">
+        <nav-bar></nav-bar>
+        <div class="px-24">
             <router-view></router-view>
         </div>
     </div>
 </template>
 
 <script>
-export default {
-    name: 'AppLayout'
-}
+    import NavBar from '../components/NavBar.vue';
+    export default {
+        name: 'AppLayout',
+        components: {
+            NavBar
+        }
+    }
 </script>
